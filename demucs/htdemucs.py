@@ -68,7 +68,7 @@ class HTDemucs(nn.Module):
         wiener_residual=False,
         cac=True,
         # Main structure
-        depth=4,
+        depth=6,
         rewrite=True,
         # Frequency branch
         multi_freqs=None,
@@ -87,7 +87,7 @@ class HTDemucs(nn.Module):
         norm_groups=4,
         # DConv residual branch
         dconv_mode=1,
-        dconv_depth=2,
+        dconv_depth=4,
         dconv_comp=8,
         dconv_init=1e-3,
         # Before the Transformer
